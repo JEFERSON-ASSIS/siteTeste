@@ -45,6 +45,14 @@
               .withButton({"color":"#DB2B25","icon":""})
               .withCustomCommonUrl('https://totaline.chat.blip.ai/')
               .build();
+
+              // reseta a ultima conversa
+            localStorage.removeItem('blipSdkUAccount');
+            new BlipChat()
+              .withAppKey('bWlkZWFjYXJyaWVycm91dGVyOjhiOTJiM2U3LTI4NjUtNDNjZi1hZTc5LTRiZDg4ZTQ0YTdjMg==')
+              .withButton({"color":"#DB2B25","icon":""})
+              .withCustomCommonUrl('https://totaline.chat.blip.ai/')
+              .build();              
           }
       })();
   </script>            
